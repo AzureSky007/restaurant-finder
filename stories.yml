@@ -1,0 +1,87 @@
+version: "2.0"
+
+stories:
+
+- story: find 
+  steps:
+  - intent: greet
+  - action: utter_greet
+  # - checkpoint: form_start
+  # - intent: inform
+  - action: restaurant_form
+  - active_loop: restaurant_form
+  # - action: action_recommend_restaurant
+  # - action: action_deactivate_loop
+  # - action: action_reset
+  - action: action_recommend_restaurant
+
+  
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: restaurant_form
+  - action: action_reset
+  - action: utter_more_info
+  - intent: inform
+    entities:
+    - cuisine_type: italian
+  - slot_was_set:
+    - cuisine_type: italian
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: restaurant_form
+  - action: action_reset
+  - intent: inform
+    entities:
+    - size: '2'
+    - cuisine_type: italian
+  - slot_was_set:
+    - cuisine_type: italian
+  - slot_was_set:
+    - size: '2'
+  - action: utter_more_info
+  - action: action_recommend_restaurant
+
+- story: interactive_story_1
+  steps:
+  - action: restaurant_form
+  - action: action_reset
+  - intent: inform
+    entities:
+    - cuisine_type: chinese
+  - slot_was_set:
+    - cuisine_type: chinese
+  - action: utter_more_info
+  - intent: inform
+    entities:
+    - size: one
+    - location: California
+  - slot_was_set:
+    - location: California
+  - slot_was_set:
+    - size: one
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: restaurant_form
+  - intent: inform
+    entities:
+    - cuisine_type: italian
+  - slot_was_set:
+    - cuisine_type: italian
+  - action: utter_more_info
+  - intent: inform
+    entities:
+    - size: '3'
+    - location: San Francisco
+  - slot_was_set:
+    - location: San Francisco
+  - slot_was_set:
+    - size: '3'
+  - action: action_recommend_restaurant
