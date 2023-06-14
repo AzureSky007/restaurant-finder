@@ -1,0 +1,81 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: inform
+  examples: |
+    - I prefer [Italian](cuisine_type) food
+    - I like to have [Mexican](cuisine_type) food
+    - I usually eat [Indian](cuisine_type)
+    - I'm in the mood for some [Thai](cuisine_type) tonight
+    - Let's try [Lebanese](cuisine_type) food today
+    - Our team of [10](size) are going for dinner tonight
+    - The [two](size) of us are going on a date
+    - The [6](size) people meeting today will need [Korean](cuisine_type) food
+    - Currently in [Japan](location) with my [2](size) best buddies, where can we get some good [Japanese](cuisine_type) food to eat?
+    - Looking for some [Curry](cuisine_type) in [San Francisco](location) as all [six](size) of us are hungry
+    - We're a group of [10](size) looking for a place to eat in [Los Angeles](location)
+    - I love [Pizza](cuisine_type) and I'm in [New York](location)
+    - I want to book a restaurant for 3 people in [California](location)
+    - Are there any good restaurants in [India](location) ?
+    - I need to scout some good places in [USA](location). Any suggestions?
+    - I want to know some good [Japanese](cuisine_type) hotels in [Finland](location)
+    - I want to have dinner at a [Mexican](cuisine_type) restaurant in [Chicago](location).
+    - Can you recommend a good [Pasta](cuisine_type) place in [Rome](location)?
+    - I'm looking for a [Chinese](cuisine_type) restaurant in [London](location) for a party of 5.
+    - Are there any vegetarian-friendly [Thai](cuisine_type) restaurants in [Bangkok](location)?
+    - I'm visiting [Sydney](location) and craving some [Burger](cuisine_type). Any recommendations?
+    - I want to celebrate my birthday at a [French](cuisine_type) restaurant in [Paris](location).
+    - Where can I find a nice [Greek](cuisine_type) restaurant in [Athens](location)?
+    - I'm in [Tokyo](location) and I want to try some authentic [Sushi](cuisine_type). Any suggestions?
+    - Do you know any great [Spanish](cuisine_type) restaurants in [Barcelona](location)?
+    - I'm traveling to [Dubai](location) and I'm interested in trying some local [Arabic](cuisine_type) cuisine. Any recommendations?
+    - I love to eat [italian](cuisine_type) food
+    - I want a table for [2](size) in an [italian](cuisine_type) restaurant
+    - I love [chinese](cuisine_type) food
+    - It's only [one](size) person and I'll be dining in [California](location)
+    - I love [italian](cuisine_type) food a lot
+    - It will be the [3](size) of us and we will be eating in [San Francisco](location)
